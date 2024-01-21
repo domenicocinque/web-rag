@@ -1,0 +1,4 @@
+haystack-ai==2.0.0b4
+typer==0.9.0
+googlesearch-python==1.2.3
+
