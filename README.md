@@ -3,9 +3,9 @@
 ## Description
 
 This project is a question-answering system that uses a pipeline of components to process a user's query, search for relevant documents, and generate a response.
-Powered by Haystack 2.0 and Hugging Face Transformers.
+Powered by [Haystack 2.0](https://github.com/deepset-ai/haystack) and Hugging Face Transformers.
 
-The component that searches on the web uses `googlesearch`, which has will return 429 errors if used too much in a short period of time (related issue: [here](https://github.com/Nv7-GitHub/googlesearch/issues/61))
+The component that searches on the web uses the `googlesearch` library, which has will return 429 errors if used too much in a short period of time (related issue: [here](https://github.com/Nv7-GitHub/googlesearch/issues/61))
 
 
 ## Installation
