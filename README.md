@@ -11,7 +11,7 @@ The component that searches on the web uses the `googlesearch` library, which ha
 ## Installation
 
 1. Clone this repository.
-2. Install the required Python packages by running `pip install -r requirements.txt`.
+2. Install the required Python packages by running `pip install -r requirements.txt`, or `uv sync` (if you use it).
 3. Set your `OPENAI_API_KEY` environment variable to your OpenAI API key.
 
 ## Usage

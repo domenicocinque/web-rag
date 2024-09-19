@@ -1,7 +1,7 @@
 import logging
 
 import typer
-from haystack.document_stores import InMemoryDocumentStore
+from haystack.document_stores.in_memory import InMemoryDocumentStore
 from src.preprocess import make_preprocess_pipeline
 from src.search import make_search_pipeline
 from src.retrieve import make_retrieve_pipeline

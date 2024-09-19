@@ -222,4 +222,5 @@ pip-selfcheck.json
 
 # End of https://www.toptal.com/developers/gitignore/api/dotenv,python,macos,venv
 
-.vscode 
+.vscode
+.idea

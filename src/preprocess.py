@@ -2,6 +2,7 @@ import os
 from haystack import Pipeline 
 from haystack.components.generators import OpenAIGenerator
 from haystack.components.builders import PromptBuilder
+from haystack.utils import Secret
 
 search_template = """
 Rewrite the following user question for an optimized web search.\n
@@ -21,7 +22,7 @@ Rewritten Question for Web Search:
 def make_preprocess_pipeline():
     preprocess_pipeline = Pipeline()
     preprocess_pipeline.add_component("prompt_builder", PromptBuilder(template=search_template))
-    preprocess_pipeline.add_component("llm", OpenAIGenerator(api_key=os.getenv("OPENAI_API_KEY")))
+    preprocess_pipeline.add_component("llm", OpenAIGenerator(api_key=Secret.from_env_var("OPENAI_API_KEY")))
     preprocess_pipeline.connect("prompt_builder", "llm")
 
     return preprocess_pipeline
