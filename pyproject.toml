@@ -3,11 +3,13 @@ name = "web-rag"
 version = "0.1.0"
 description = "Simple RAG over the web."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.11.9"
 dependencies = [
+    "fastapi>=0.115.11",
     "googlesearch-python>=1.2.5",
-    "haystack-ai>=2.5.1",
-    "sentence-transformers>=3.1.1",
+    "haystack-ai>=2.10.3",
+    "pydantic-settings>=2.8.1",
     "trafilatura>=1.12.2",
     "typer>=0.12.5",
+    "uvicorn>=0.34.0",
 ]
